@@ -1,11 +1,16 @@
+import { GithubUserData, GetGithubUserResponseAction } from './../types-definitions'
 import { GET_USER_SUCCESS } from '../constants'
 import { Map } from 'immutable'
 
-const initialState: any = {
-  users: Map()
+type State = {
+  users: Map<string, GithubUserData>
 }
 
-export function GithubUserReducer(state: any = initialState, action: any) {
+const initialState: State = {
+  users: Map<string, GithubUserData>()
+}
+
+export function GithubUserReducer(state: State = initialState, action: GetGithubUserResponseAction) {
   switch (action.type) {
     case GET_USER_SUCCESS:
       return {

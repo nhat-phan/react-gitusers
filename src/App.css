@@ -1,5 +1,42 @@
-.navbar a:hover {
+#main-nav {
+  border-radius: 0;
+}
+
+#main-nav.navbar .nav {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+
+#main-nav.navbar .nav li {
+  height: 50px;
+  float: left;
+  width: 40%;
+}
+
+#main-nav.navbar .nav a {
+  color: #fff;
+  cursor: pointer;
+  line-height: 36px;
+}
+
+#main-nav.navbar .nav li:first-child {
+  text-align: left;
+  width: 30%;
+}
+#main-nav.navbar .nav li:last-child {
+  text-align: center;
+  width: 30%;
+}
+
+#main-nav.navbar .nav a:hover {
   background-color: transparent !important;
+}
+
+@media (min-width: 768px) {
+  #main-nav.navbar .nav a {
+    line-height: 20px;
+  }
 }
 
 .nav-users {

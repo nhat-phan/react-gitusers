@@ -10,7 +10,7 @@ export default class Root extends React.Component<Props> {
   render() {
     return (
       <Provider store={this.props.store}>
-        <App />
+        <App displayUsers={['GrahamCampbell', 'fabpot', 'weierophinney', 'rkh', 'josh']} />
       </Provider>
     )
   }
