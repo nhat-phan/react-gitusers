@@ -1,3 +1,7 @@
+.navbar a:hover {
+  background-color: transparent !important;
+}
+
 .nav-users {
   margin: 0;
   padding: 0;
